@@ -139,3 +139,69 @@ Main Section
     padding-right: 20px;
     color: hsl(0, 0%, 60%);
 }
+
+/* Footer section */
+
+footer{
+    margin-top: 130px;
+    height: 250px;
+    background-color: #161616;
+    color: white;
+    text-align: center;
+    padding-top: 130px;
+    padding-bottom: 50px;
+    font-size: 40px;
+}
+hr{
+    width: 1640px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.footer-terms{
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+/* Responsive Section (Media Queries) */
+/* ---------------------------------- */
+/* Mobile devices */
+
+@media screen and (max-width:688px) {
+    .banner-head{
+        width: 90%;
+        text-align: center;
+    }
+    header{
+        margin-bottom: 0;
+    }
+    .banner-title{
+        font-size: 28px;
+    }
+    .banner-text{
+        font-size: 13px;
+    }
+    .head-part{
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+    }
+    .banner-image img{
+        width: 90%;
+        margin-left: 20px;
+    }
+    .main-part, .blogs{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin: 10px;
+    }
+    .banner-head button{
+        padding: 10px;
+    }
+    .aside-sec{
+        background-color: white;
+        margin-left: 30px;
+    }
+    .link-button{
+        border: 1px solid rgba(0, 0, 0, 0.199);
+    }
+    
+}
