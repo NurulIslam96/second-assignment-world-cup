@@ -1,0 +1,141 @@
+/*-----------
+Body Section 
+------------*/
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+/*-----------------------
+Header Section --- Styles
+----------------------- */
+
+header{
+    margin: 80px 10%;
+}
+
+.head-part{
+    width: 100%;
+    height: 40em;
+    background-color: #161616;
+    border-radius: 15px;
+    display: flex;
+}
+
+.banner-head{
+    color: white;
+    width: 60%;
+    margin: 8% 5%;
+}
+
+.banner-title{
+    font-size: 70px;
+}
+
+.banner-text{
+    font-weight: 400;
+}
+
+.banner-head button{
+    background-color: red;
+    color: white;
+    padding: 1.5%;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-top: 5vh;
+}
+
+.fa-solid{
+    padding-left: 5px;
+}
+
+.banner-image img{
+    width: 100%;
+    height: 100%;
+}
+
+/* ----------
+Main Section 
+------------*/
+
+.main-part{
+    margin: 0 10% ;
+    display: flex;
+}
+
+/* Aside section */
+
+.aside-sec{
+    background-color: black;
+    border-radius: 10px;
+    width: 250px;
+    padding: 30px;
+    height: 240px;
+    margin-right: 15px;
+}
+
+.link-button{
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.group-btn{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.link-button a{
+    text-decoration: none;
+    color: #161616;
+    font-weight: 600;
+}
+
+.link-button:hover{
+    background-color: red;
+}
+
+.link-button a:hover{
+    color: white;
+}
+
+/* Blog section */
+
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap:15px;
+    grid-row-gap:15px ;
+}
+
+.blog{
+    border: 1px solid rgba(207, 178, 178, 0.363);
+    border-radius: 15px;
+}
+
+.blog-images img{
+    width: 100%;
+}
+
+.blog-text{
+    padding: 20px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.blog-text button{
+    padding: 5px 8px;
+}
+
+.fa-regular{
+    padding-right: 10px;
+    color: hsl(0, 0%, 50%);
+}
+
+.icon-comment{
+    font-weight: 400;
+    padding-right: 20px;
+    color: hsl(0, 0%, 60%);
+}
