@@ -139,7 +139,24 @@ Main Section
     padding-right: 20px;
     color: hsl(0, 0%, 60%);
 }
+/* ------------------------------- */
+/* Second page( upcoming matches ) */
+/* ------------------------------- */
+.team-matchup{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+}
 
+.team-fights{
+    border: 1px solid #E8E8E8;
+    border-radius: 5px;
+    height: 240px;
+    width: 280px;
+}
+.match-details{
+    text-align: center;
+}
 /* Footer section */
 
 footer{
@@ -149,7 +166,6 @@ footer{
     color: white;
     text-align: center;
     padding-top: 130px;
-    padding-bottom: 50px;
     font-size: 40px;
 }
 hr{
