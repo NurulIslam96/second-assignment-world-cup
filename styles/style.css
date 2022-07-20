@@ -104,12 +104,14 @@ Main Section
     color: #161616;
     font-weight: 600;
     margin: 0;
-    transition: 0.2s ease;
+    transition: 0.3s ease;
 }
 
 .link-button:hover{
-    background-color: red;
-    cursor: pointer;
+    background-image: linear-gradient(to right, red 0%, burlywood 90%);
+    display: block;
+    color: #fff;
+    text-decoration: none;
 }
 
 .link-button a:hover{
