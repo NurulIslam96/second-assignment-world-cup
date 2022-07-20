@@ -40,10 +40,16 @@ header{
 .banner-head button{
     background-color: red;
     color: white;
-    padding: 1.5%;
     font-size: 18px;
     border-radius: 10px;
-    margin-top: 5vh;
+    outline: 0;
+    border: none;
+    text-align: center;
+    padding: 10px;
+    width: 150px;
+    transition: ease-out 0.5s;
+    cursor: pointer; 
+    box-shadow: inset 0 0 0 0 yellow;
 }
 
 .fa-solid{
@@ -54,6 +60,7 @@ header{
     width: 100%;
     height: 100%;
 }
+
 
 /* ----------
 Main Section 
@@ -176,7 +183,12 @@ hr{
     font-size: 16px;
     padding-left: 20px;
 }
+/* Bonus section */
 
+.banner-head button:hover{
+    box-shadow: inset 150px 0 0 0 rgb(209, 141, 14);
+    color: black;
+}
 /* Responsive Section (Media Queries) */
 /* ---------------------------------- */
 /* Mobile devices */
