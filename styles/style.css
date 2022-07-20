@@ -102,10 +102,13 @@ Main Section
 
 .link-button:hover{
     background-color: red;
+    color: white;
+    cursor: pointer;
 }
 
 .link-button a:hover{
     color: white;
+    background-color: red;
 }
 
 /* Blog section */
@@ -146,6 +149,23 @@ Main Section
     padding-right: 20px;
     color: hsl(0, 0%, 60%);
 }
+
+.tab-button{
+    visibility: hidden;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 0;
+}
+
+.tab-button button{
+    background-color: red;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
 /* ------------------------------- */
 /* Second page( upcoming matches ) */
 /* ------------------------------- */
@@ -168,7 +188,7 @@ Main Section
 
 footer{
     margin-top: 130px;
-    height: 250px;
+    height: 320px;
     background-color: #161616;
     color: white;
     text-align: center;
@@ -183,6 +203,8 @@ hr{
     font-size: 16px;
     padding-left: 20px;
 }
+
+
 /* Bonus section */
 
 .banner-head button:hover{
@@ -232,7 +254,14 @@ hr{
     .link-button{
         border: 1px solid rgba(0, 0, 0, 0.199);
     }
-    
+    .footer-terms{
+        padding-left: 0;
+    }
+    .footer-align{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 10px;
+    }
 }
 
 /* Tab Devices */
@@ -262,5 +291,7 @@ hr{
         display: grid;
         grid-template-columns: repeat(2,1fr);
     }
-
+    .tab-button{
+        visibility: visible;
+    }
 }
