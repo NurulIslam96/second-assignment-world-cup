@@ -112,7 +112,7 @@ Main Section
 
 .blog{
     border: 1px solid rgba(207, 178, 178, 0.363);
-    border-radius: 15px;
+    border-radius: 15px; 
 }
 
 .blog-images img{
@@ -142,20 +142,20 @@ Main Section
 /* ------------------------------- */
 /* Second page( upcoming matches ) */
 /* ------------------------------- */
-.team-matchup{
+.team-box{
+    border: 1px solid rgba(207, 178, 178, 0.363);
+    border-radius: 15px;
+    text-align: center; 
+}
+.team-match{
     display: flex;
-    justify-content: space-around;
-    padding-top: 40px;
+    padding: 50px 70px 0 70px;
 }
-
-.team-fights{
-    border: 1px solid #E8E8E8;
-    border-radius: 5px;
-    height: 240px;
-    width: 280px;
+.team-match h3{
+    padding: 0 20px;
 }
-.match-details{
-    text-align: center;
+.team-box p{
+    padding-bottom: 40px;
 }
 /* Footer section */
 
@@ -169,7 +169,7 @@ footer{
     font-size: 40px;
 }
 hr{
-    width: 1640px;
+    width: 80vw;
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .footer-terms{
@@ -182,6 +182,7 @@ hr{
 /* Mobile devices */
 
 @media screen and (max-width:688px) {
+    
     .banner-head{
         width: 90%;
         text-align: center;
@@ -201,23 +202,53 @@ hr{
         flex-direction: column;
     }
     .banner-image img{
-        width: 90%;
+        width: 85%;
         margin-left: 20px;
     }
     .main-part, .blogs{
         display: grid;
         grid-template-columns: repeat(1,1fr);
-        margin: 10px;
+        align-items: center;
     }
     .banner-head button{
         padding: 10px;
     }
     .aside-sec{
+        width: 83%;
         background-color: white;
-        margin-left: 30px;
     }
     .link-button{
         border: 1px solid rgba(0, 0, 0, 0.199);
     }
     
+}
+
+/* Tab Devices */
+
+@media screen and (min-width:689px) and (max-width:992px) {
+    .head-part{
+        height: auto;
+    }
+    .aside-sec{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+        width: 92%;
+        background-color: white;
+    }
+    .link-button{
+        margin: 0;
+        width: 150px;
+        border: 1px solid rgba(0, 0, 0, 0.199);
+    }
+    .main-part{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
 }
