@@ -87,6 +87,11 @@ Main Section
     background-color: white;
     border-radius: 10px;
     text-align: center;
+    margin: 0;
+}
+.up-button a{
+    width: 500px;
+    height: 500px;
 }
 
 .group-btn{
@@ -98,17 +103,17 @@ Main Section
     text-decoration: none;
     color: #161616;
     font-weight: 600;
+    margin: 0;
+    transition: 0.2s ease;
 }
 
 .link-button:hover{
     background-color: red;
-    color: white;
     cursor: pointer;
 }
 
 .link-button a:hover{
     color: white;
-    background-color: red;
 }
 
 /* Blog section */
@@ -211,6 +216,38 @@ hr{
     box-shadow: inset 150px 0 0 0 rgb(209, 141, 14);
     color: black;
 }
+
+.team-box-group{
+    border: 1px solid rgba(207, 178, 178, 0.363);
+    padding-top: 8px;
+    border-radius: 15px;
+    text-align: center; 
+    box-shadow: 1px 1px 1px rgba(128, 128, 128, 0.212);
+}
+
+.group-image img{
+    width: 100%;
+}
+
+.link-group{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.clickable-links i{
+    color: white;
+    margin-left: 20px;
+    padding-right: 20px;
+}
+
+.clickable-links i:hover{
+    color: salmon;
+    transition:  0.5s ease;
+}
+
+
+
 /* Responsive Section (Media Queries) */
 /* ---------------------------------- */
 /* Mobile devices */
@@ -262,6 +299,7 @@ hr{
         grid-template-columns: repeat(1,1fr);
         grid-row-gap: 10px;
     }
+
 }
 
 /* Tab Devices */
